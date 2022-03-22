@@ -1,0 +1,113 @@
+<!-- 
+
+Hello Camper!
+
+Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <header class="header">
+        <h1 class="text-center" id="title">Streaming Platform Survey Form</h1>
+        <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        
+        <form id="survey-form">
+            <div class="form-group">
+            <label for="name" id="name-label">Name:</label><br>
+            <input type="text" class="form-control" id="name" name="name" required placeholder="name"><br>
+            </div>
+
+            <div class="form-group">
+            <label for="e-mail" id="email-label">E-mail:</label><br>
+            <input type="email" class="form-control" id="email" placeholder="e-mail" required><br>
+            </div>
+
+            <div class="form-group">
+            <label for="number" id="number-label">What month were you born</label><br>
+            <input type="number" class="form-control" name="number" id="number" placeholder="1 - 12" min="1" max="12"><br>
+            </div>
+            <!--
+            <label for="dropdown">Age group</label><br>
+            <input list="age-group" id="dropdown">
+            <datalist id="age-group">
+                <option value="12 - 18 years old"></option>
+                <option value="19 - 25 years old"></option>
+                <option value="25 - 30 years old"></option>
+                <option value="more than 30 years old"></option>
+            </datalist><br>
+            -->
+            <div class="form-group">
+            <label for="dropdown">Age group</label><br>
+            <select name="age-group" class="form-control" id="dropdown">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="12 - 18 years old">12 - 18 years old</option>
+                <option value="19 - 25 years old">19 - 25 years old</option>
+                <option value="25 - 30 years old">25 - 30 years old</option>
+                <option value="more than 30 years old">more than 30 years old</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+            <fieldset id="checkbox">
+                <legend>What is your favorite kind of movies?</legend>
+                <input type="checkbox" class="input-checkbox" name="movies" id="action" value="Action">
+                <label for="action">Action</label>
+                <input type="checkbox" class="input-checkbox" name="movies" id="drama" value="Drama">
+                <label for="drama">Drama</label>
+                <input type="checkbox" class="input-checkbox" name="movies" id="sci-fi" value="Sci-fi">
+                <label for="sci-fi">Sci-fi</label>
+                <input type="checkbox" class="input-checkbox" name="movies" id="comedy" value="Comedy">
+                <label for="comedy">Comedy</label>
+                <input type="checkbox" class="input-checkbox" name="movies" id="thriller" value="Thriller">
+                <label for="thriller">Thriller</label>
+            </fieldset>
+            </div>
+
+            <div class="form-group">
+            <fieldset id="radio">
+                <legend>What is your favorite streaming platform? </legend>
+                <input type="radio" class="input-radio" id="netflix" name="streaming-platform" value="Netflix">
+                <label for="netflix">Netflix</label><br>
+                <input type="radio" class="input-radio" id="amazon-prime-video" name="streaming-platform" value="Amazon Prime Video">
+                <label for="amazon-prime-video">Amazon Prime Video</label><br>
+                <input type="radio" class="input-radio" id="apple-tv" name="streaming-platform" value="Apple TV">
+                <label for="apple-tv">Apple TV</label><br>
+                <input type="radio" class="input-radio" id="mubi" name="streaming-platform" value="Mubi">
+                <label for="mubi">Mubi</label><br>
+                <input type="radio" class="input-radio" id="disney+" name="streaming-platform" value="Disney +">
+                <label for="disney+">Disney +</label><br>
+                <input type="radio" class="input-radio" id="hbo-max" name="streaming-platform" value="HBO Max">
+                <label for="hbo-max">HBO Max</label><br>
+            </fieldset>
+            </div>
+
+            <div class="form-group">
+            <p>Anything you would like to share?</p>
+            <textarea name="comments" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+            <button id="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+    </main>
+</body>
+
+</html>
